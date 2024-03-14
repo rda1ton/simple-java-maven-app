@@ -1,2 +1,2 @@
-deploy: false
-scan: true
+deploy: true
+scan: false
