@@ -1,3 +1,2 @@
 - 'mvn test'
-- 'another command'
-- 'yet another command'
+- 'mvn --version'
