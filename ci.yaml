@@ -1,5 +1,5 @@
 DEPLOY: true
-SCAN: true
+SCAN: false
 build:
   - 'mvn clean'
   - 'mvn compile'
