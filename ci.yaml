@@ -4,3 +4,5 @@ Build:
   - 'mvn clean'
   - 'mvn compile'
   - 'mvn package'
+Test:
+  - 'mvn test'
