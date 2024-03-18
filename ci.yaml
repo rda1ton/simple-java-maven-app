@@ -1,4 +1,4 @@
-Depoly: true
+Deploy: true
 Scan: false
 Build:
   - 'mvn clean'
