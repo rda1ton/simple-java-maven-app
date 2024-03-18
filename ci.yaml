@@ -1,6 +1,2 @@
 Deploy: true
 Scan: false
-Build:
-  - 'mvn clean'
-  - 'mvn compile'
-  - 'mvn package'
