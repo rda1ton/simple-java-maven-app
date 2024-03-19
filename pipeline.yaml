@@ -8,12 +8,12 @@ stages:
   Test:
     - type: shell
       command: "echo 'Testing...'"
-  Deploy:
+  Deploy1:
     - type: shell
       command: "echo 'Testing...'"
-  Deploy:
+  Deploy2:
     - type: shell
       command: "echo 'Testing...'"
-  Deploy:
+  Deploy3:
     - type: shell
       command: "echo 'Testing...'"
