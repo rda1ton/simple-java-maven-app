@@ -1,2 +1,5 @@
 Deploy: true
 Scan: false
+Build:
+  - 'mvn clean install'
+  - 'echo custom script'
