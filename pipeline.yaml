@@ -1,6 +1,6 @@
 stages:
   astage:
-    parallel: true
+    parallel: false
     steps:
       - name: ccc
         type: shell
