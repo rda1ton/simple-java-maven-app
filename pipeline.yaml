@@ -5,6 +5,13 @@ stages:
       - name: Step 1.1
         type: shell
         command: echo "Running Step 1.1"
+        parallelSteps:
+          - name: Step 1.1.1
+            type: shell
+            command: echo "Running Step 1.2.1"
+          - name: Step 1.1.2
+            type: shell
+            command: echo "Running Step 1.2.2"
       - name: Step 1.2
         type: shell
         command: echo "Running Step 1.2"
