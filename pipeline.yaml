@@ -2,7 +2,7 @@ stages:
   astage:
     parallel: true
     steps:
-      - name: build
+      - name: ccc
         type: shell
         command: 'mvn clean install'
   Stage 1b:
