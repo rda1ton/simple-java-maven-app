@@ -1,5 +1,5 @@
 stages:
-  - name: Stage 1
+  Stage 1:
     parallel: true
     steps:
       - name: Step 1.1
@@ -15,7 +15,7 @@ stages:
           - name: Step 1.2.2
             type: shell
             command: echo "Running Step 1.2.2"
-  - name: Stage 2
+  Stage 2:
     parallel: false
     steps:
       - name: Step 2.1
