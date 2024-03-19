@@ -12,11 +12,14 @@ stages:
       - type: shell
         command: echo "Hello, again!"
   Deploy1:
-    - type: shell
-      command: "echo 'Testing...'"
+    steps:
+      - type: shell
+        command: echo "Hello, again!"
   Deploy2:
-    - type: shell
-      command: "echo 'Testing...'"
+    steps:
+      - type: shell
+        command: echo "Hello, again!"
   Deploy3:
-    - type: shell
-      command: "echo 'Testing...'"
+    steps:
+      - type: shell
+        command: echo "Hello, again!"
