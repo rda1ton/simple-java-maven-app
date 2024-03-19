@@ -1,3 +1,2 @@
-
-DEPLOY: true
-SCAN: false
+Deploy: true
+Scan: false
