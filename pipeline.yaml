@@ -1,13 +1,16 @@
-# pipeline.yaml
-
 stages:
-  Build:
-    - type: shell
-      command: 'mvn clean install'
-
-  Test:
-    - type: shell
-      command: "echo 'Testing...'"
+  stage1:
+    parallel: true
+    steps:
+      - type: shell
+        command: echo "Hello, world!"
+      - type: shell
+        command: echo "Running in parallel"
+  stage2:
+    parallel: false
+    steps:
+      - type: shell
+        command: echo "Hello, again!"
   Deploy1:
     - type: shell
       command: "echo 'Testing...'"
