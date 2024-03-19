@@ -1,29 +1,23 @@
 stages:
-  stage1:
+  - name: Stage 1
     parallel: true
     steps:
-      - type: shell
-        command: echo "Hello, world!"
-      - type: shell
-        command: echo "Running in parallel"
-      - type: shell
-        command: echo "Running in parallel"
-      - type: shell
-        command: echo "Running in parallel"
-  stage2:
+      - name: Step 1.1
+        type: shell
+        command: echo "Running Step 1.1"
+      - name: Step 1.2
+        type: shell
+        command: echo "Running Step 1.2"
+        parallelSteps:
+          - name: Step 1.2.1
+            type: shell
+            command: echo "Running Step 1.2.1"
+          - name: Step 1.2.2
+            type: shell
+            command: echo "Running Step 1.2.2"
+  - name: Stage 2
     parallel: false
     steps:
-      - type: shell
-        command: echo "Hello, again!"
-    Deploy1:
-      steps:
-        - type: shell
-          command: echo "Hello, again!"
-    Deploy2:
-      steps:
-        - type: shell
-          command: echo "Hello, again!"
-    Deploy3:
-      steps:
-        - type: shell
-          command: echo "Hello, again!"
+      - name: Step 2.1
+        type: shell
+        command: echo "Running Step 2.1"
