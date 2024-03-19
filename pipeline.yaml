@@ -10,7 +10,5 @@ stages:
       command: "echo 'Testing...'"
 
   Deploy:
-    - type: script
-      script: |
-        echo 'Deploying...'
-        # Add your deployment script here
+    - type: shell
+      command: "echo 'Testing...'"
