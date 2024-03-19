@@ -3,7 +3,7 @@
 stages:
   Build:
     - type: shell
-      command: "echo 'Building...'"
+      command: 'mvn clean install'
 
   Test:
     - type: shell
