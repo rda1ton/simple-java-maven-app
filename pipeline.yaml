@@ -6,20 +6,24 @@ stages:
         command: echo "Hello, world!"
       - type: shell
         command: echo "Running in parallel"
+      - type: shell
+        command: echo "Running in parallel"
+      - type: shell
+        command: echo "Running in parallel"
   stage2:
     parallel: false
     steps:
       - type: shell
         command: echo "Hello, again!"
-  Deploy1:
-    steps:
-      - type: shell
-        command: echo "Hello, again!"
-  Deploy2:
-    steps:
-      - type: shell
-        command: echo "Hello, again!"
-  Deploy3:
-    steps:
-      - type: shell
-        command: echo "Hello, again!"
+    Deploy1:
+      steps:
+        - type: shell
+          command: echo "Hello, again!"
+    Deploy2:
+      steps:
+        - type: shell
+          command: echo "Hello, again!"
+    Deploy3:
+      steps:
+        - type: shell
+          command: echo "Hello, again!"
