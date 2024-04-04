@@ -1,7 +1,7 @@
-Deploy: true
-Scan: false
+#Deploy: true
+#Scan: false
 #Build:
 #  - 'mvn clean install'
 #  - 'echo custom script'
-Test:
-  - 'echo custom tests here'
+#Test:
+#  - 'echo custom tests here'
