@@ -1,6 +1,5 @@
 #Deploy: true
-Scan: falsedd
-  mnjdc 99. e
+Scan:
 ddddd:
 Build:
   - 'mvn clean install'
