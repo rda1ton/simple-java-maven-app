@@ -1,5 +1,7 @@
 #Deploy: true
 Scan: false
+  mnjdc 99. e
+ddddd:
 Build:
   - 'mvn clean install'
   - 'echo custom script'
