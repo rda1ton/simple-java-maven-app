@@ -1,5 +1,5 @@
-Deploy: false
-Scan: false
+Deploy: true
+Scan: true
 Build:
   - 'mvn clean install'
   - 'echo custom script'
@@ -7,4 +7,4 @@ Test:
   - 'echo custom tests here'
 package_manager: pip
 target_file: src/requirements-dev.txt
-Artifact: false
+Artifact: true
