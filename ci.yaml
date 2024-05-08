@@ -1,4 +1,5 @@
 #Deploy: true
+Scan: false
 ddddd:
 Build:
   - 'mvn clean install'
